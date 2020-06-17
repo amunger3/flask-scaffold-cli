@@ -1,0 +1,9 @@
+Welcome to AMung's Flask Scaffolder! The following settings will be used to create your application:
+
+Python Version:     {{ pyversion }}
+Project Name:       {{ appname }}
+Project Path:       {{ path }}
+Skeleton:           {{ skeleton }}
+Git:                {% if git %}Yes{% else %}{{ disabled }}No{% endif %}
+Yarn:               {% if yarn %}Enabled{% else %}Disabled{% endif %}
+{% if yarn %}Yarn Dependencies: {% for dependency in yarn %}{{ dependency }}{% endfor %}{% endif %}
